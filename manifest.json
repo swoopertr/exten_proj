@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Senim süper Extentionım",
+    "description": "Extension v.1",
+    "version": "1.0.1",
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "/assets/images/hi.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["content-script.js"],
+            "css":["style.css"],
+            "run_at": "document_idle"
+            
+        }
+        
+    ]
+  }
